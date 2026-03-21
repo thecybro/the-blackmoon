@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${webview.cspSource} 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src ${webview.cspSource};">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="${cssUri}">
+<title>BLACK MOON</title>
+
+</head>
+<body> 
+<div class="boot-overlay" id="bootOverlay">
+    <div class="boot-logo">
+        THE<br>BLACK MOON
+    </div>
+    <div class="boot-tagline">God's in his heaven.<br>Blessing everyone in the world.</div>
+    <div class="boot-bar"><div class="boot-fill"></div></div>
+</div>
+<div class="root" id="root">
+    <div class="panel-header">
+    <div class="panel-title-row">
+        <span class="panel-title">MAGI SYSTEM</span>
+        <span class="panel-status-dot"></span>
+    </div>
+    <div class="panel-subtitle">SPECIAL AGENCY NERV &mdash; SUPERCOMPUTER</div>
+    </div>
+    <div class="section">
+    <div class="section-label">OPERATOR</div>
+    <div class="operator-row">
+        <div class="operator-hex">
+        <svg viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 1L39 11.5V34.5L20 45L1 34.5V11.5L20 1Z" stroke="#ff6600" stroke-width="1.5"/>
+            <text x="20" y="29" text-anchor="middle" fill="#ff6600" font-family="Orbitron,monospace" font-size="11" font-weight="900" id="pilotInitial">I</text>
+        </svg>
+        </div>
+        <div class="operator-info">
+        <div class="operator-name" id="pilotName">IKARI</div>
+        <div class="operator-meta" id="workspaceName">NO MISSION</div>
+        <div class="operator-meta" id="activeFile">&mdash;</div>
+        </div>
+    </div>
+    </div>
+    <div class="section">
+    <div class="section-label">SYNCHRONIZATION</div>
+    <div class="sync-display">
+        <span class="sync-rate" id="syncRate">&mdash;.&mdash;%</span>
+        <span class="sync-label">SYNC RATE</span>
+    </div>
+    <div class="sync-bar-wrap"><div class="sync-bar" id="syncBar" style="width:0%"></div></div>
+    </div>
+    <div class="section">
+    <div class="section-label">MAGI SUPERCOMPUTER</div>
+    <div class="magi-units">
+        <div class="magi-unit">
+        <div class="magi-unit-label">MELCHIOR-1</div>
+        <div class="magi-bar-wrap"><div class="magi-bar" id="magi0" style="width:0%"></div></div>
+        <div class="magi-unit-val" id="magiVal0">&mdash;</div>
+        </div>
+        <div class="magi-unit">
+        <div class="magi-unit-label">BALTHASAR-2</div>
+        <div class="magi-bar-wrap"><div class="magi-bar magi-bar-2" id="magi1" style="width:0%"></div></div>
+        <div class="magi-unit-val" id="magiVal1">&mdash;</div>
+        </div>
+        <div class="magi-unit">
+        <div class="magi-unit-label">CASPAR-3</div>
+        <div class="magi-bar-wrap"><div class="magi-bar magi-bar-3" id="magi2" style="width:0%"></div></div>
+        <div class="magi-unit-val" id="magiVal2">&mdash;</div>
+        </div>
+    </div>
+    </div>
+    <div class="section">
+    <div class="section-label">BATTLE STATUS</div>
+    <div class="battle-grid">
+        <div class="battle-cell">
+        <div class="battle-val" id="errorCount">0</div>
+        <div class="battle-key">ANGELS</div>
+        </div>
+        <div class="battle-cell">
+        <div class="battle-val battle-warn" id="warnCount">0</div>
+        <div class="battle-key">WARNINGS</div>
+        </div>
+        <div class="battle-cell">
+        <div class="battle-val battle-info" id="editorCount">0</div>
+        <div class="battle-key">SECTORS</div>
+        </div>
+    </div>
+    </div>
+    <div class="section">
+    <div class="section-label">AT-FIELD STATUS</div>
+    <div class="at-field">
+        <div class="at-row"><span class="at-key">BARRIER</span><span class="at-val at-green">ACTIVE</span></div>
+        <div class="at-row"><span class="at-key">INTEGRITY</span><span class="at-val" id="atIntegrity">100%</span></div>
+        <div class="at-row"><span class="at-key">THREAT LVL</span><span class="at-val" id="threatLevel">NOMINAL</span></div>
+    </div>
+    </div>
+    <div class="section">
+    <div class="section-label">ACTIONS</div>
+    <div class="action-buttons">
+        <button class="action-btn" id="btnProblems">VIEW ERRORS</button>
+        <button class="action-btn action-btn-alert" id="btnAlert">ANGEL ALERT</button>
+        <button class="action-btn" id="btnTheme" >DISCARD CURRENT THEME</button>
+    </div>
+    </div>
+    <div class="clock-row" id="clockRow">--:--:--  //  SECTOR 3-G</div>
+</div>
+<script src="${jsUri}"></script>
+</body>
+</html>
