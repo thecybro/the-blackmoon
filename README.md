@@ -47,6 +47,9 @@ Opening the MAGI panel plays a full boot animation: NERV logo, tagline, progress
 **Open the panel:**
 Click the hexagonal icon in the activity bar, or run `Black Moon: Open Command Center` from the Command Palette.
 
+> For detailed usage, settings, and troubleshooting — see the [Instruction Manual](MANUAL.md).
+
+
 ---
 
 ## Configuration
@@ -92,7 +95,7 @@ Click the hexagonal icon in the activity bar, or run `Black Moon: Open Command C
 
 ## The lore
 
-The **Black Moon** is the massive ancient vessel buried beneath Tokyo-3 that NERV headquarters is built inside the hidden foundation of everything. The MAGI are the three supercomputers (each containing a fragment of their creator's soul) that make every critical decision NERV faces.
+The **Black Moon** is the massive ancient vessel buried beneath Tokyo-3 that NERV headquarters is built inside, the hidden foundation of everything. The MAGI are the three supercomputers (each containing a fragment of their creator's soul) that make every critical decision NERV faces.
 
 Your editor is now built on the same foundation.
 
@@ -100,6 +103,3 @@ Your editor is now built on the same foundation.
 
 *Special Agency NERV: Tokyo-3*
 
----
-
-lol
