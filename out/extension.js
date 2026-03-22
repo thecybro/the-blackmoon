@@ -288,7 +288,7 @@ class MagiPanelProvider {
                     <div class="action-buttons">
                         <button class="action-btn" id="btnProblems">VIEW ERRORS</button>
                         <button class="action-btn action-btn-alert" id="btnAlert">ANGEL ALERT</button>
-                        <button class="action-btn" id="btnTheme" >DISCARD CURRENT THEME</button>
+                        <button class="action-btn" id="btnTheme" >CHANGE THEME</button>
                     </div>
                     </div>
                     

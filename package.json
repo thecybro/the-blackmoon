@@ -1,0 +1,92 @@
+{
+  "name": "nerv-command-center",
+  "displayName": "NERV: Command Center",
+  "description": "Transform VS Code into the NERV Command Center. Eva-style HUDs, MAGI system panel, Angel Alert diagnostics, and a full Evangelion color theme.",
+  "version": "1.0.0",
+  "publisher": "nerv-special-agency",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Themes", "Other"],
+  "keywords": ["evangelion", "nerv", "theme", "hud", "anime", "sci-fi"],
+  
+  "icon": "icons/icon128.png",
+  
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "nerv.openPanel",
+        "title": "Black Moon: Toggle Theme"
+      },
+      {
+        "command": "nerv.angelAlert",
+        "title": "NERV: Trigger Angel Alert"
+      },
+      {
+        "command": "nerv.toggleMagi",
+        "title": "NERV: Toggle MAGI Status"
+      }
+    ],
+    "themes": [
+      {
+        "label": "NERV Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nerv-dark.json"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "nerv-sidebar",
+          "title": "NERV Command Center",
+          "icon": "icons/nerv-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "nerv-sidebar": [
+        {
+          "type": "webview",
+          "id": "nerv.magiPanel",
+          "name": "MAGI System",
+          "icon": "icons/nerv-icon.svg"
+        }
+      ]
+    },
+
+
+    "configuration": {
+      "title": "NERV Command Center",
+      "properties": {
+        "nerv.enableAlerts": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show Angel Alert notifications on diagnostic errors"
+        },
+        "nerv.magiUpdateInterval": {
+          "type": "number",
+          "default": 3000,
+          "description": "MAGI panel refresh rate in milliseconds"
+        },
+        "nerv.pilotName": {
+          "type": "string",
+          "default": "HITACHI",
+          "description": "Your pilot designation shown in the status bar"
+        }
+      }
+    }
+  },
+
+
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
