@@ -191,7 +191,7 @@ class MagiPanelProvider {
                     <div class="boot-logo">
                         THE<br>BLACK MOON
                     </div>
-                    <div class="boot-tagline">God's in his heaven.<br>Blessing everyone in the world.</div>
+                    <div class="boot-tagline">God's in his heaven.<br> All's right with the world.</div>
                     <div class="boot-bar"><div class="boot-fill"></div></div>
                 </div>
 
