@@ -520,5 +520,28 @@
       "settings": { "foreground": "#ff8800", "fontStyle": "italic underline" }
     }
   ],
-  
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "class":                "#ffcc00",
+    "interface":            "#00ccff",
+    "enum":                 "#ff8800",
+    "enumMember":           "#ff6600",
+    "parameter":            "#d0a080",
+    "function":             "#ffaa00",
+    "method":               "#ff9900",
+    "variable":             "#c0c0d8",
+    "variable.readonly":    "#ff8800",
+    "property":             "#ddaa88",
+    "property.readonly":    "#cc8866",
+    "type":                 "#00aadd",
+    "namespace":            "#cc44ff",
+    "keyword":              "#ff3355",
+    "string":               "#00dd77",
+    "number":               "#ff8800",
+    "regexp":               "#ff4488",
+    "decorator":            "#cc44ff",
+    "comment":              "#ff660018",
+    "macro":                "#ff5500",
+    "selfKeyword":    { "foreground": "#ff5500", "italic": true }
+  }
 }

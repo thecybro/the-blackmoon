@@ -105,3 +105,8 @@ Your editor is now built on the same foundation.
 
 *Special Agency NERV: Tokyo-3*
 
+<div align="center">
+  <img src="https://github.com/thecybro/the-blackmoon/blob/main/previews/boot.png" width="320" alt="VibeCheck Popup" />
+  <img src="https://github.com/thecybro/the-blackmoon/blob/main/previews/root.png" width="320" alt="Whitelist" />
+  <img src="https://github.com/thecybro/the-blackmoon/blob/main/previews/theme.png" width="320" alt="Blur Overlay" />
+</div>
