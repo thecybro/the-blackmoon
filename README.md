@@ -6,6 +6,8 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-ff6600?style=flat-square) ![VS Code](https://img.shields.io/badge/VS%20Code-1.85+-050508?style=flat-square&logo=visualstudiocode) ![License](https://img.shields.io/badge/license-MIT-ff6600?style=flat-square)
 
+If you are seeing this outside of vscode, chekout the [publisher](https://github.com/thecybro/the-blackmoon)
+
 ---
 
 ## What's inside
@@ -47,7 +49,7 @@ Opening the MAGI panel plays a full boot animation: NERV logo, tagline, progress
 **Open the panel:**
 Click the hexagonal icon in the activity bar, or run `Black Moon: Open Command Center` from the Command Palette.
 
-> For detailed usage, settings, and troubleshooting — see the [Instruction Manual](MANUAL.md).
+> For detailed usage, settings, and troubleshooting — see the [Instruction Manual](https://github.com/thecybro/the-blackmoon/blob/main/manual.md).
 
 
 ---

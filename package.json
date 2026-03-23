@@ -1,22 +1,27 @@
 {
-  "name": "nerv-command-center",
-  "displayName": "NERV: Command Center",
+  "name": "black-moon",
+  "displayName": "BLACK MOON: Command Center",
   "description": "Transform VS Code into the NERV Command Center. Eva-style HUDs, MAGI system panel, Angel Alert diagnostics, and a full Evangelion color theme.",
   "version": "1.0.0",
-  "publisher": "nerv-special-agency",
+  "publisher": "thecybro",
   "engines": { "vscode": "^1.85.0" },
   "categories": ["Themes", "Other"],
   "keywords": ["evangelion", "nerv", "theme", "hud", "anime", "sci-fi"],
   
   "icon": "icons/icon128.png",
   
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecybro/the-blackmoon"
+  },
+
   "activationEvents": ["onStartupFinished"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "nerv.openPanel",
-        "title": "Black Moon: Toggle Theme"
+        "title": "Black Moon: Open Command Center"
       },
       {
         "command": "nerv.angelAlert",
@@ -38,7 +43,7 @@
       "activitybar": [
         {
           "id": "nerv-sidebar",
-          "title": "NERV Command Center",
+          "title": "THE BLACK MOON",
           "icon": "icons/nerv-icon.svg"
         }
       ]
@@ -56,7 +61,7 @@
 
 
     "configuration": {
-      "title": "NERV Command Center",
+      "title": "THE BLACK MOON",
       "properties": {
         "nerv.enableAlerts": {
           "type": "boolean",
